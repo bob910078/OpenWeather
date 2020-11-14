@@ -13,6 +13,7 @@
 		C6F5126F256005DC00602A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F5126E256005DC00602A1D /* Assets.xcassets */; };
 		C6F51272256005DC00602A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F51270256005DC00602A1D /* LaunchScreen.storyboard */; };
 		C6F5127D2560066900602A1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6F5127C2560066900602A1D /* README.md */; };
+		C6F5128025600D9700602A1D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5127F25600D9700602A1D /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		C6F51271256005DC00602A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F51273256005DC00602A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F5127C2560066900602A1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C6F5127F25600D9700602A1D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		C6F5128225600E2A00602A1D /* OpenWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenWeather.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +60,14 @@
 		C6F51264256005DB00602A1D /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				C6F5128225600E2A00602A1D /* OpenWeather.entitlements */,
 				C6F51265256005DB00602A1D /* AppDelegate.swift */,
 				C6F51269256005DB00602A1D /* ViewController.swift */,
 				C6F5126B256005DB00602A1D /* Main.storyboard */,
 				C6F5126E256005DC00602A1D /* Assets.xcassets */,
 				C6F51270256005DC00602A1D /* LaunchScreen.storyboard */,
 				C6F51273256005DC00602A1D /* Info.plist */,
+				C6F5127F25600D9700602A1D /* WeatherService.swift */,
 			);
 			path = OpenWeather;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F5126A256005DB00602A1D /* ViewController.swift in Sources */,
+				C6F5128025600D9700602A1D /* WeatherService.swift in Sources */,
 				C6F51266256005DB00602A1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenWeather/OpenWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KB772ULPQ;
 				INFOPLIST_FILE = OpenWeather/Info.plist;
@@ -295,6 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Blasphemy.OpenWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OpenWeather/OpenWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KB772ULPQ;
 				INFOPLIST_FILE = OpenWeather/Info.plist;
@@ -314,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Blasphemy.OpenWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

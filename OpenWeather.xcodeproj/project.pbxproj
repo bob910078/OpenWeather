@@ -14,6 +14,7 @@
 		C6F51272256005DC00602A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F51270256005DC00602A1D /* LaunchScreen.storyboard */; };
 		C6F5127D2560066900602A1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6F5127C2560066900602A1D /* README.md */; };
 		C6F5128025600D9700602A1D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5127F25600D9700602A1D /* WeatherService.swift */; };
+		C6F5128525600FFD00602A1D /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C6F5127C2560066900602A1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C6F5127F25600D9700602A1D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C6F5128225600E2A00602A1D /* OpenWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenWeather.entitlements; sourceTree = "<group>"; };
+		C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				C6F51270256005DC00602A1D /* LaunchScreen.storyboard */,
 				C6F51273256005DC00602A1D /* Info.plist */,
 				C6F5127F25600D9700602A1D /* WeatherService.swift */,
+				C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */,
 			);
 			path = OpenWeather;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F5128525600FFD00602A1D /* CurrentWeatherModel.swift in Sources */,
 				C6F5126A256005DB00602A1D /* ViewController.swift in Sources */,
 				C6F5128025600D9700602A1D /* WeatherService.swift in Sources */,
 				C6F51266256005DB00602A1D /* AppDelegate.swift in Sources */,

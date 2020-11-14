@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import OpenWeatherService
 
 class ViewController: UIViewController {
 
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
         
         let myCity = "taipei"
         
-        let service = WeatherService()
+        let service = WeatherService.shared
         service.getCurrentWeatherData(cityName: myCity) { dataModel in
             DispatchQueue.main.async {
                 // update UI here ~

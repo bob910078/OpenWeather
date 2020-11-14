@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,7 @@
 		C6F5126F256005DC00602A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F5126E256005DC00602A1D /* Assets.xcassets */; };
 		C6F51272256005DC00602A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F51270256005DC00602A1D /* LaunchScreen.storyboard */; };
 		C6F5127D2560066900602A1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6F5127C2560066900602A1D /* README.md */; };
-		C6F5128025600D9700602A1D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5127F25600D9700602A1D /* WeatherService.swift */; };
-		C6F5128525600FFD00602A1D /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */; };
+		C6F512A225601EE000602A1D /* OpenWeatherService in Frameworks */ = {isa = PBXBuildFile; productRef = C6F512A125601EE000602A1D /* OpenWeatherService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +25,8 @@
 		C6F51271256005DC00602A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F51273256005DC00602A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F5127C2560066900602A1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C6F5127F25600D9700602A1D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C6F5128225600E2A00602A1D /* OpenWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenWeather.entitlements; sourceTree = "<group>"; };
-		C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
+		C6F5129D25601E7700602A1D /* OpenWeatherService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenWeatherService; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F512A225601EE000602A1D /* OpenWeatherService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +44,11 @@
 		C6F51259256005DB00602A1D = {
 			isa = PBXGroup;
 			children = (
+				C6F5129D25601E7700602A1D /* OpenWeatherService */,
 				C6F5127C2560066900602A1D /* README.md */,
 				C6F51264256005DB00602A1D /* OpenWeather */,
 				C6F51263256005DB00602A1D /* Products */,
+				C6F512A025601EE000602A1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,10 +70,15 @@
 				C6F5126E256005DC00602A1D /* Assets.xcassets */,
 				C6F51270256005DC00602A1D /* LaunchScreen.storyboard */,
 				C6F51273256005DC00602A1D /* Info.plist */,
-				C6F5127F25600D9700602A1D /* WeatherService.swift */,
-				C6F5128425600FFD00602A1D /* CurrentWeatherModel.swift */,
 			);
 			path = OpenWeather;
+			sourceTree = "<group>";
+		};
+		C6F512A025601EE000602A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +97,9 @@
 			dependencies = (
 			);
 			name = OpenWeather;
+			packageProductDependencies = (
+				C6F512A125601EE000602A1D /* OpenWeatherService */,
+			);
 			productName = OpenWeather;
 			productReference = C6F51262256005DB00602A1D /* OpenWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -146,9 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F5128525600FFD00602A1D /* CurrentWeatherModel.swift in Sources */,
 				C6F5126A256005DB00602A1D /* ViewController.swift in Sources */,
-				C6F5128025600D9700602A1D /* WeatherService.swift in Sources */,
 				C6F51266256005DB00602A1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +362,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6F512A125601EE000602A1D /* OpenWeatherService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenWeatherService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6F5125A256005DB00602A1D /* Project object */;
 }
